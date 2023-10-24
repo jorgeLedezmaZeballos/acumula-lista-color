@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lista de Organizadores</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <div class = lista-titulo >
+     <h3>Lista de Organizadores</h3>
+    <button id="agregar-organizador-btn">+</button>
+  </div>  
+    
+    <ul id="organizadores-list">
+        <!-- Aquí se mostrarán los organizadores agregados -->
+    </ul>
+    
+
+    <div id="modal">
+        <div id="modal-content">
+            <h2>Agregar Organizador</h2>
+            <form id="organizador-form">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" required>
+                <br>
+
+                <label for="correo">Correo:</label>
+                <input type="email" id="correo" required>
+                <br>
+
+                <button type="submit">Agregar</button>
+                <button type="button" id="cerrar-modal-btn">Cerrar</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js">
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+/* Estilos para el modal */
+        #modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        #modal-content {
+            background-color: #fff;
+            width: 300px;
+            margin: 100px auto;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .lista-titulo {
+            display: flex;
+            align-items: center;
+        }
+
+        .lista-titulo h3 {
+            margin: 0;
+        }
+
+        #agregar-organizador-btn {
+            background-color: #4CAF50; /* Color de fondo del botón */
+            color: white; /* Color del texto del botón */
+            width: 30px; /* Ancho cuadrado */
+            height: 30px; /* Altura cuadrada */
+            border: none;
+            border-radius: 5px;
+            font-size: 20px;
+            cursor: pointer;
+            margin-left: 10px; /* Espacio entre el botón y el título */
+        }
+
+        #agregar-organizador-btn:hover {
+            background-color: #45a049; /* Cambio de color al pasar el cursor */
+        }
+
+        #organizadores-list {
+            list-style: none;
+            display: flex;
+        }
+
+        #organizadores-list li {
+            margin-right: 10px;
+            padding: 5px 10px; /* Ajuste del padding para reducir la altura */
+            border-radius: 5px;
+            background-color: #4CAF50; /* Color de fondo verde */
+            color: white; /* Color de texto blanco */
+        }
