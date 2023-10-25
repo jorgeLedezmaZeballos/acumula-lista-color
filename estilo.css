@@ -1,5 +1,4 @@
-/* Estilos para el modal */
-        #modal {
+#modal {
             display: none;
             position: fixed;
             top: 0;
@@ -27,30 +26,49 @@
         }
 
         #agregar-organizador-btn {
-            background-color: #4CAF50; /* Color de fondo del botón */
-            color: white; /* Color del texto del botón */
-            width: 30px; /* Ancho cuadrado */
-            height: 30px; /* Altura cuadrada */
+            background-color: #4CAF50;
+            color: white;
+            width: 30px;
+            height: 30px;
             border: none;
             border-radius: 5px;
             font-size: 20px;
             cursor: pointer;
-            margin-left: 10px; /* Espacio entre el botón y el título */
+            margin-left: 10px;
         }
 
         #agregar-organizador-btn:hover {
-            background-color: #45a049; /* Cambio de color al pasar el cursor */
+            background-color: #45a049;
         }
 
-        #organizadores-list {
-            list-style: none;
+        #organizadores-container {
             display: flex;
+            flex-wrap: wrap;
+            margin-top: 10px;
+            margin-left:10px;
         }
 
-        #organizadores-list li {
+        .organizador {
             margin-right: 10px;
-            padding: 5px 10px; /* Ajuste del padding para reducir la altura */
+            margin-bottom: 10px;
+            padding: 5px 10px;
             border-radius: 5px;
-            background-color: #4CAF50; /* Color de fondo verde */
-            color: white; /* Color de texto blanco */
+            background-color: gray;/*#4caf50;*/
+            color: white;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+
+        .borrar-btn {
+            background-color: #f44336;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-left: 5px;
+        }
+
+        .borrar-btn:hover {
+            background-color: #d32f2f;
         }
